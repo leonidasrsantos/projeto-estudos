@@ -41,8 +41,8 @@ div.menu-curso{
     overflow: hidden;
 }
 div.menu-curso ul{
-    list-style-type: none;
     display: none;
+    list-style-type: none;
     background-color:#c8bbde
 }
 div.menu-curso li{
@@ -51,4 +51,12 @@ div.menu-curso li{
     padding: 20px;
     border: 1px solid white;
     cursor: pointer;
+}
+div.menu-curso a{
+    text-decoration: none;
+    color:white
+}
+
+div.menu-curso li:hover{
+    background-color: #8d60dc;
 }

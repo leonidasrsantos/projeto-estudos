@@ -18,12 +18,10 @@
             border-radius: 5px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.316);
         }
-        a{
-            text-decoration: none;
-        }
+        
     </style>
 </head>
-<body>
+<body onresize="windowSize()">
     <header>
         <div class="contain">
             <div>
@@ -37,8 +35,8 @@
             <div class="list">
             
                 <ul id="listcursos">
-                        <li ><a href="instituicoes-ensino/curso-em-video/index.html" style='color:rgb(30, 30, 219);'>Curso em vídeo</a></li>
-                    <li style="color:rgb(59,45,136)">Recode</li>
+                        <li id="curso-video"><a href="instituicoes-ensino/curso-em-video/index.html" >Curso em vídeo</a></li>
+                    <li>Recode</li>
                     <li>Opção3</li>
                     <li>Opcão4</li>
             </div>
@@ -49,11 +47,18 @@
     <main>
         <div class="contain">
             <div class="content" style="color:brown;font-size:1.2em;">
-                Por favor <strong>selecione</strong> uma plataforma (instuição de ensino) no <strong>menu</strong> acima.
+                Por favor <strong>selecione</strong> uma plataforma (instituição de ensino) no <strong>menu</strong> acima.
             </div>
         </div>
     </main>
     <script>
+        function windowSize(){
+            if (window.innerWidth >=768){
+                listcursos.style.display = 'block'
+            }else{
+                listcursos.style.display = 'none'
+            }
+        }
         function abrirMenu(){
             if (listcursos.style.display == 'block'){
              listcursos.style.display = 'none'

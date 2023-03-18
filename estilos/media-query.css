@@ -10,6 +10,7 @@
         display:none;
     }
     div.menu-curso ul{
+        background: #673ab7;
         display: block;
         width: 100%;
         padding: 14px 0px ;
@@ -19,7 +20,5 @@
         padding: 14px 4%;
         border: none;
     }
-    div.menu-curso img{
-        width: 100px;
-    }
+    
 }
