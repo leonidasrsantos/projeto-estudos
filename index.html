@@ -5,17 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Estudos</title>
 </head>
 <body>
     <header>
         <div class="contain">
             <div>
-                <h1>Meus Estudos</h1>
+                <h1>Meus Estudos &#x1F4D4</h1>
             </div>
-        
         </div>
-
     </header> 
+    <nav>
+        <div class="menu-curso">
+            <span class="material-icons" id="burguer" onclick="abrirMenu()">menu</span>
+            <ul id="listcursos">
+                <li style="color:blue"><img src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cursoemvideo-logo-branca.png" alt=""></li>
+                <li style="color:rgb(59,45,136)">Recode</li>
+                <li>Opção3</li>
+                <li>Opcão4</li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        function abrirMenu(){
+            if (listcursos.style.display == 'block'){
+             listcursos.style.display = 'none'
+            } else{
+                listcursos.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>

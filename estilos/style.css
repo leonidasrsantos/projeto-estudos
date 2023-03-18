@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: blanchedalmond;
+    
 }
 header{
     margin: 0px;
@@ -21,4 +21,31 @@ header h1{
     color: aliceblue;
     padding-top: 30px ;
         
+}
+span#burguer{
+    cursor: pointer;
+    width: 100%;
+}
+div.menu-curso{
+    background-color:#8d60dc;
+    margin: auto;
+    text-align: center;
+    color: white;
+    width: 300px;
+    padding:5px;
+}
+div.menu-curso ul{
+    list-style-type: none;
+    display: none;
+    background-color:#a887e2
+}
+div.menu-curso img{
+    width: 140px;
+}
+div.menu-curso li{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 20px;
+    border: 1px solid white;
+    cursor: pointer;
 }
