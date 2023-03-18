@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <title>Estudos</title>
+    <style>
+        div.content{
+            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.316);
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,15 +33,26 @@
     </header> 
     <nav>
         <div class="menu-curso">
-            <span class="material-icons" id="burguer" onclick="abrirMenu()">menu</span>
-            <ul id="listcursos">
-                <li style="color:blue"><img src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cursoemvideo-logo-branca.png" alt=""></li>
-                <li style="color:rgb(59,45,136)">Recode</li>
-                <li>Opção3</li>
-                <li>Opcão4</li>
+            <div class="menu-burguer"><span class="material-icons" id="burguer" onclick="abrirMenu()">menu</span></div>
+            <div class="list">
+            
+                <ul id="listcursos">
+                        <li ><a href="instituicoes-ensino/curso-em-video/index.html" style='color:rgb(30, 30, 219);'>Curso em vídeo</a></li>
+                    <li style="color:rgb(59,45,136)">Recode</li>
+                    <li>Opção3</li>
+                    <li>Opcão4</li>
+            </div>
+            
             </ul>
         </div>
     </nav>
+    <main>
+        <div class="contain">
+            <div class="content" style="color:brown;font-size:1.2em;">
+                Por favor <strong>selecione</strong> uma plataforma (instuição de ensino) no <strong>menu</strong> acima.
+            </div>
+        </div>
+    </main>
     <script>
         function abrirMenu(){
             if (listcursos.style.display == 'block'){

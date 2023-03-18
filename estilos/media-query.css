@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+    div.menu-curso{
+        width: 90vw;
+        border: none;
+        padding: 0px;
+    }
+    div.menu-curso span{
+        display:none;
+    }
+    div.menu-curso ul{
+        display: block;
+        width: 100%;
+        padding: 14px 0px ;
+    }
+    div.menu-curso li{
+        display: inline;
+        padding: 14px 4%;
+        border: none;
+    }
+    div.menu-curso img{
+        width: 100px;
+    }
+}
