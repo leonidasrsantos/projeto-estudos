@@ -6,8 +6,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    
+html,body{
+    width: 100vw;
 }
 header{
     margin: 0px;
