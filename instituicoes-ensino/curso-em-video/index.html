@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/header.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Estudos</title>
+</head>
+<body onresize="windowSize()">
+    <header>
+        <div class="contain">
+            <div>
+                <h1><a href="/index.html">Meus Estudos &#x1F4D4</a></h1>
+            </div>
+        </div>
+    </header> 
+    <nav>
+        <div class="menu-curso">
+            <div class="menu-burguer"><span class="material-icons" id="burguer" onclick="abrirMenu()">menu</span></div>
+            <div class="list">
+            
+                <ul id="listinst">
+                    <a href="index.html"> <li id="curso-video">Curso em vídeo</li></a>
+                    <li>Recode</li>
+                    <li>Opção3</li>
+                    <li>Opcão4</li>
+            </div>
+            
+            </ul>
+        </div>
+    </nav>
+    <nav id="listcurso" style="margin-bottom: 6px;">
+        <div id="navegacaoCursos">
+            <div class="logo" onclick="abrirCursos()"><img src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cursoemvideo-logo-branca.png" alt=""><span style="color:white;font-size: 0.7em;float:right;margin:38px 2px 0px 0px;"><figcaption>selecione um curso aqui</figcaption></span></div>
+            <ul id="cursos">
+                <a href="cursos/html.html">
+                    <li><img src="imagens/logo-js-css-html.png" alt=""> <figcaption>CSS HTML e JS</figcaption></li>
+                </a>
+                <a href="cursos/html2.html">
+                    <li><img src="imagens/logo-css-html.png" alt=""><figcaption>HTML e CSS</figcaption></li>
+                </a>
+                <a href="cursos/javascript.html">
+                    <li><img src="imagens/logo-js.png" alt=""><figcaption>JavaScript</figcaption></li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="content">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vitae, delectus consequuntur maxime perferendis facilis voluptatem suscipit, sunt quam amet distinctio. Placeat dolorem commodi minima reprehenderit voluptates tempore incidunt debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ut deleniti placeat consequatur, unde dolores animi minus repellat assumenda, eaque ab quibusdam incidunt saepe? Dolorem expedita minus perspiciatis non suscipit.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script>
+    function abrirCursos(){
+        if (cursos.style.display== 'none'){
+            cursos.style.display= 'block'
+        }else{
+            cursos.style.display= 'none'
+        }
+    }
+    function windowSize(){
+        if (window.innerWidth >=768){
+            listinst.style.display = 'block'
+            cursos.style.display = 'block'
+        }else{
+            listinst.style.display = 'none'
+            cursos.style.display = 'none'
+        }
+    }
+    function abrirMenu(){
+        if (listinst.style.display == 'block'){
+            listinst.style.display = 'none'
+
+        } else{
+            listinst.style.display = 'block'
+
+        }
+    }
+</script>
+</html>
