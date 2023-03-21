@@ -1,0 +1,26 @@
+@charset "UTF-8";
+section{
+    width: 90vw;
+    margin: 20px auto;
+}
+article{
+    line-height: 1.5em;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.237);
+}
+article h1,h2{
+    margin: 10px 0px;
+    font-size: 2em;
+    font-family: 'Mirza', cursive;
+    text-align: center;
+}
+ol.cap-list{
+    margin-left: 30px;
+}
+ol.cap-list ul{
+    margin-left: 40px;
+}
+

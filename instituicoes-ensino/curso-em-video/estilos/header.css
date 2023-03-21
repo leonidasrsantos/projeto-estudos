@@ -105,13 +105,14 @@ span.link:hover{
     color: white;
 }
 footer{
+    height: 50px;
     text-align: center;
     background-color: black;
     color: white;
     padding: 10px;
 }
 footer p{
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Mirza', cursive;
 }
 footer img{

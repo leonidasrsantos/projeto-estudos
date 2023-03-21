@@ -1,0 +1,129 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/header.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Estudos</title>
+</head>
+<body onresize="windowSize()">
+    <header>
+        <div class="contain">
+            <div>
+                <h1><a href="/projeto-estudos/">Meus Estudos &#x1F4D4</a></h1>
+            </div>
+        </div>
+    </header> 
+    <nav>
+        <div class="menu-curso">
+            <div class="menu-burguer"><span class="material-icons" id="burguer" onclick="abrirMenu()">menu</span></div>
+            <div class="list">
+            
+                <ul id="listinst">
+                    <a href="index.html"> <li id="curso-video">Curso em vídeo</li></a>
+                    <li>Recode</li>
+                    <li>Opção3</li>
+                    <li>Opcão4</li>
+            </div>
+            </ul>
+        </div>
+    </nav>
+    <nav id="listcurso" style="margin-bottom: 6px;">
+        <div id="navegacaoCursos">
+            <div class="logo" onclick="abrirCursos()"><img src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/cursoemvideo-logo-branca.png" alt="logo do curso em video"><span style="color:white;font-size: 0.7em;float:right;margin:38px 2px 0px 0px;"><figcaption>selecione um curso aqui</figcaption></span></div>
+            <ul id="cursos">
+                <a href="html.html">
+                    <li><img src="imagens/logo-js-css-html.png" alt=" logo css html e javascript"> <figcaption>CSS HTML e JS</figcaption></li>
+                </a>
+                <a href="html2.html">
+                    <li><img src="imagens/logo-css-html.png" alt="logo css e html"><figcaption>HTML e CSS</figcaption></li>
+                </a>
+                <a href="javascript.html">
+                    <li><img src="imagens/logo-js.png" alt="logo javascript"><figcaption>JavaScript</figcaption></li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>Módulo 1- Tags e semântica HTML</h2>
+                <ol class="cap-list">
+                    <li>Capítulo 1 - Explicação do módulo e o surgimento da internet:</li>
+                        <ul>
+                            <li>1958- Criação da Darpa na Guerra Fria;</li> 
+                            <li>1969- ARPANET, uma rede criada para enviar dados entre bases militar;</li>
+                            <li>1970- Criação do protocolo NCP para maquinas diferente se comunicar;</li>
+                            <li>1970- Crescimento da rede;</li>
+                            <li>1972- NCP se torna impraticável de usar.</li>
+                            <li>1972- Criação do TCP para eliminar problema do NCP de parar rede para apenas uma comunicação;</li>
+                            <li>1972- Criação do IP para indetificar maquinas;</li>
+                            <li>1983- Abandono dos militares a ARPANET por conta de muitos usuários indevidos (Faculdades, empresas,etc);</li>
+                            <li>Década 90- Tim Berners-Lee cria o http, HTML e o www, e Marc Andreessen cria o primeiro navegador, o Mosaic;</li>
+                        </ul>
+                    <li>Capítulo 2- Funcionamento da internet</li>
+                        <ul>
+                            <li>O computador funciona por sinais de ondas quadradas (sinais elétricos), representados como 0 e 1;</li>
+                            <li>o conjunto 0 e 1 se chama binary digit (digítos binarios);</li>
+                            <li> O 0 ou o 1 sozinho se chama bit, o minimo para representar algo é o conjunto de 8 bits (01000001 = A) que se chama byte;</li>
+                            <li>O computador trabalha com a base 2, então 1KB equivale 1024 bytes, 2<sup>10</sup>= 1024;</li>
+                            <li>Multiplos de byte:</li>
+                                <ul>
+                                    <li>1024 bytes = 1KB</li>
+                                    <li>1024 KB = 1 MB</li>
+                                    <li>1024 MB = 1 GB</li>
+                                    <li>1024 GB = 1 TB</li>
+                                    <li>e por ai vai...</li>
+                                </ul>
+                            <li> M<strong>B</strong> = megabytes | M<strong>b</strong> = megabits</li>
+                            <li>Megabyte é para armazenamento, o Megabits é velocidade de transmissão.</li>
+                            <li>O modem é responsavel por fazer a onda quadrada virar uma onda senoidal e refazer a onde quadrada ao chegar em outro dispositivo (<strong>Mo</strong>dulacão e <strong>Dem</strong>odulação);</li>
+                            <li>Toda maquina conectada na internet recebe um número (IP) e ele muda a todo momento;</li>
+                            <li>Para encontrar o servidor (instagram,youtube e todos outros sites) temos DNS (ex: Instagram.com)</li>
+                            <li>Os dados vem em pacotes diferentes (uma imagem pode ser quebrada em varios pacotes que seguem caminhos diferentes)</li>
+                            <li>Os pacotes seguem caminhos diferentes pois muitas vezes um caminho pode estar cogestionados.</li>
+                        </ul>
+                </ol>
+            </article>
+            <div>
+                <iframe src="imagens/instagram-icon.png" frameborder="1"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://instagram.com/leonidas_jlrs/" target="_blank"><img src="imagens/instagram-icon.png" alt="logo instagram" class="right"></a><a href="https://github.com/leonidasrsantos" target="_blank"><img src="imagens/github-icon.png" alt="logo github"></a>
+        <p>Feito com carinho</p>
+        <p>By: <a href="https://www.instagram.com/leonidas_jlrs/" target="_blank">Leonidas</a> </p>
+    </footer>
+<script>
+    function abrirCursos(){
+        if (cursos.style.display== 'none'){
+            cursos.style.display= 'block'
+        }else{
+            cursos.style.display= 'none'
+        }
+    }
+    function windowSize(){
+        if (window.innerWidth >=768){
+            listinst.style.display = 'block'
+            cursos.style.display = 'block'
+        }else{
+            listinst.style.display = 'none'
+            cursos.style.display = 'none'
+        }
+    }
+    function abrirMenu(){
+        if (listinst.style.display == 'block'){
+            listinst.style.display = 'none'
+
+        } else{
+            listinst.style.display = 'block'
+
+        }
+    }
+</script>
+</body>
+</html>
