@@ -2,6 +2,7 @@
 section{
     width: 90vw;
     margin: 20px auto;
+    
 }
 article{
     line-height: 1.5em;
@@ -17,10 +18,39 @@ article h1,h2{
     font-family: 'Mirza', cursive;
     text-align: center;
 }
+div.buttons{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    margin:10px 0px;
+
+}
+div.button{
+    display: inline-block;
+    margin-top: 6px;
+    margin: 1%;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+}
 ol.cap-list{
-    margin-left: 30px;
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+ol.cap-list div > li{
+    text-align: center;
+    font-size: 1.1em;
+    padding: 10px;
+    font-weight: bold;
 }
 ol.cap-list ul{
     margin-left: 40px;
+    line-height: 1.8em;
 }
+ol.cap-list div.listone, div.listtwo,div.listthree{display: none;}
 
