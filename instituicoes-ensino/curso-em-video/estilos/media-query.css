@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px){
+    section{
+        max-width: 58%;
+        margin: auto;
+    }
+}
+@media  screen and (min-width:1200px) {
+    main{
+        position: relative;
+        margin:auto;
+    }
+    section{
+        margin: auto;
+    }
+    div.github-link-repository{
+        position: absolute;
+        left:80%;
+        top: 0px;
+        width: 19%;
+    }
+    div.github-link-repository > div{
+        width: 97%;
+    }
+}
