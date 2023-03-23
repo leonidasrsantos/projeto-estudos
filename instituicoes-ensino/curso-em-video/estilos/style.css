@@ -31,16 +31,25 @@ div.button{
     margin-top: 6px;
     margin: 1%;
     padding: 5px 10px;
-    background-color: blue;
+    background: blue;
     color: white;
-    border: 1px solid black;
+    
     border-radius: 25px;
     cursor: pointer;
 }
+div.button:hover{
+    border:1px solid red;
+}
+
 ol.cap-list{
+    min-height: 200px;
     list-style-type: none;
     border: 1px solid black;
     border-radius: 10px;
+}
+div#aviso{
+    margin: 50px;
+    color: red;
 }
 ol.cap-list div > li{
     text-align: center;
@@ -48,9 +57,53 @@ ol.cap-list div > li{
     padding: 10px;
     font-weight: bold;
 }
-ol.cap-list ul{
-    margin-left: 40px;
+ol.cap-list  ul{
+    margin-left: 20px;
     line-height: 1.8em;
 }
-ol.cap-list div.listone, div.listtwo,div.listthree{display: none;}
-
+ol.cap-list > div > ul > li{
+    list-style-type: '➡';
+}
+ol.cap-list > div > ul > ul{
+    list-style-type: circle;
+}
+div.github-link-repository{
+    position: relative;
+    height: 250px;
+    background-color: blueviolet;
+    
+}
+div.github-link-repository > div{
+    position: absolute;
+    background-color: #161b21;
+    text-align:center ;
+    width:70%;
+    padding-bottom: 8px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px px rgba(0, 0, 0, 0.092) inset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+div.github-link-repository div.logo-github  {
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%,-50%);
+}
+div.github-link-repository > div > div > img{
+    max-width: 300px;
+    width: 96%;
+    border-radius: 3px;
+}
+div.github-link-repository > div > div > a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+}

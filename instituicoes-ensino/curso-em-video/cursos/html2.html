@@ -54,14 +54,16 @@
                         <div class="contain">
                             <div class="buttons">
                                 <h3>Capítulos</h3>
-                                <div class="button" onclick="listOne()">1 ao 4</div>
-                                <div class="button" onclick="listTwo()">5 ao 8</div>
-                                <div class="button" onclick="listThree()">9 ao 12</div>
+                                <div class="button" id="ibutton1" onclick="listOne()">1 ao 4</div>
+                                <div class="button" id="ibutton2" onclick="listTwo()">5 ao 8</div>
+                                <div class="button" id="ibutton3" onclick="listThree()">9 ao 12</div>
                             </div>
                             <ol class="cap-list">
-                            
+                                <div id="aviso">
+                                    <p>Aviso! Os nomes dos capítulos não correspondem com os do Curso em Video, toda notação foi copiada de um caderno em que eu anotava partes interessantes e importantes das aulas. Usei algumas anotações para poder criar um conteúdo ao site.</p>
+                                </div>
                                
-                                <div class="listone" id="ilistone">
+                                <div class="listone" id="ilistone" style="display: none;">
                                     <li>Capítulo 1 - Explicação do módulo e o surgimento da internet:</li>
                                         <ul>
                                             <li>1958- Criação da Darpa na Guerra Fria;</li>
@@ -126,7 +128,7 @@
                                             <li><code>&lt;h1&gt;Olá, Mundo!&lt;/h1&gt;</code></li>
                                         </ul>
                                 </div>
-                                <div class="listtwo" id="ilisttwo">
+                                <div class="listtwo" id="ilisttwo" style="display: none;">
                                     <li>Capítulo 5- Tags simples,simbolos e emoji </li>
                                         <ul>
                                             <li>&lt;hr&gt;Usamos para criar uma linha horizontal;</li>
@@ -173,7 +175,7 @@
                                             </li>
                                         </ul>
                                 </div>
-                                <div class="listthree" id="ilistthree">
+                                <div class="listthree" id="ilistthree" style="display: none;">
                                     <li>Capítulo 9- Listas</li>
                                         <ul>
                                             <li>Lista Ordenadas (ol): Irá demonstrar contagem como 1,2,3 ou A,B,C seguindo a ordem</li>
@@ -236,10 +238,19 @@
                             </ol>
                         </div>
             </article>
-            <div>
-                <iframe src="" frameborder="1"></iframe>
-            </div>
+           
         </section>
+         <div class="github-link-repository">
+                
+                <div>
+                    <div class="logo-github">
+                        <img src="imagens/github-icon.png" alt="">
+                    </div>
+                    <div><img src="imagens/git-repositorio-html.jpeg" alt="Imagem do repositorio github"></div>
+                    <div><a href="">Acesse</a></div>
+                </div>
+            </div>
+            
     </main>
     <footer>
         <a href="https://instagram.com/leonidas_jlrs/" target="_blank"><img src="imagens/instagram-icon.png" alt="logo instagram" class="right"></a><a href="https://github.com/leonidasrsantos" target="_blank"><img src="imagens/github-icon.png" alt="logo github"></a>
@@ -249,29 +260,49 @@
 <script>
     function listOne(){
         if (ilistone.style.display == 'none'){
+            aviso.style.display = 'none'
             ilistone.style.display = 'block'
             ilisttwo.style.display = 'none'
             ilistthree.style.display = 'none'
+            ibutton1.style.background = '#0505B3'
+            ibutton2.style.background = '#2222fe'
+            ibutton3.style.background = '#2222fe'
+            
         }else{
             ilistone.style.display = 'none'
+            aviso.style.display = 'block'
+            ibutton1.style.background = '#2222fe'
+            
         }
     }
     function listTwo(){
         if (ilisttwo.style.display == 'none'){
+            aviso.style.display = 'none'
             ilistone.style.display = 'none'
             ilisttwo.style.display = 'block'
             ilistthree.style.display = 'none'
+            ibutton1.style.background = '#2222fe'
+            ibutton2.style.background = '#0505B3'
+            ibutton3.style.background = '#2222fe'
         }else{
             ilisttwo.style.display = 'none'
+            aviso.style.display = 'block'
+            ibutton2.style.background = '#2222fe'
         }
     }
     function listThree(){
         if (ilistthree.style.display == 'none'){
+            aviso.style.display = 'none'
             ilistone.style.display = 'none'
             ilisttwo.style.display = 'none'
             ilistthree.style.display = 'block'
+            ibutton1.style.background = '#2222fe'
+            ibutton2.style.background = '#2222fe'
+            ibutton3.style.background = '#0505B3'
         }else{
             ilistthree.style.display = 'none'
+            aviso.style.display = 'block'
+            ibutton3.style.background = '#2222fe'
         }
     }
 </script>
